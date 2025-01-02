@@ -1,12 +1,54 @@
-.teaser {
-  margin-top: 100px;
-  width: 100%;
-  height: auto;
+/* Hero Section */
+.hero-section {
+  background-color: #ededed; /* Your desired background color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem 10rem;
+  color: white; /* Text color explicitly set to white */
 }
 
-video {
-  width: 100%;
-  height: auto;
+.hero-text {
+  font-size: 45px;
+  font-weight: bold;
+  max-width: 50%;
+  color:#f2a61e ; /* Ensure text is white */
+}
+
+.hero-img-container {
+  width: 100%; /* Keep the image container the same size as the text container */
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+}
+
+.hero-img {
+  width: 300%; /* Ensures the image fills the container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without being stretched or cut */
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .hero-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-img-container {
+    width: 100%;
+    height: auto; /* Allows image to scale properly */
+  }
+
+  .hero-img {
+    width: 80%; /* Controls image width on small screens */
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 .about-content {
@@ -60,17 +102,17 @@ video {
   width: 8rem;
   height: 2.5rem;
   cursor: pointer;
-  background-color: #3498db;
+  background-color: #cf247e;
   color: #fff;
-  border: 1px solid #3498db;
+  border: 1px solid #cf247e;
   transition: all 0.3s ease;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .brochure-button:hover {
   transform: translate(5px, -5px);
-  background-color: #2980b9;
-  border-color: #2980b9;
+  background-color: #4166af;
+  border-color: #4166af;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 

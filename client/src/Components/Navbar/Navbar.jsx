@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../assets/LOGO/mixedd.png";
+import logo from "../../assets/images/GROUPEDMITSUMM.png";
 import brochurePath from "./Summit Brouchure.pdf";
 
 const Navbar = () => {
@@ -19,14 +19,14 @@ const Navbar = () => {
         <div className="navbar-contents">
           <div>
             <Link to="/" className="nav-link">
-              Home
+              HOME
             </Link>
           </div>
           <div className="dropdown">
-            <span className="nav-link">About ▼</span>
+            <span className="nav-link">ABOUT ▼</span>
             <div className="dropdown-content">
               <Link to="/about" className="dropdown-link">
-                About Summit
+                ABOUT
               </Link>
               <Link to="/executive-message" className="dropdown-link">
                 Executive President's Message
@@ -46,17 +46,17 @@ const Navbar = () => {
           </div>
           <div>
             <Link to="/guest" className="nav-link">
-              Guests
+              GUESTS
             </Link>
           </div>
           <div>
             <Link to="/" className="nav-link" onClick={handleDownload}>
-              Brochure
+              BROCHURE
             </Link>
           </div>
 
           <div className="dropdown">
-            <span className="nav-link">Participants ▼</span>
+            <span className="nav-link">PARTICIPANTS ▼</span>
             <div className="dropdown-content">
               <Link to="/registration-fees" className="dropdown-link">
                 Registration Fees
@@ -79,7 +79,7 @@ const Navbar = () => {
 
           <div>
             <Link to="/register" className="nav-link register-button">
-              Registration Open Soon
+              REGISTRATION OPEN SOON
             </Link>
           </div>
           {/*}

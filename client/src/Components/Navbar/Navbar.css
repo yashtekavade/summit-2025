@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white; /* Set background color */
+  background-color: #D2691E; /* Set background color */
   z-index: 1000; /* Ensure the navbar appears above other elements */
 }
 
@@ -20,10 +20,15 @@
   font-size: 16px; /* Reduce font size */
 }
 
+/* Changed text color to white */
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: white; /* Updated text color to white */
   font-family: "Lato", bold;
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Optional: Add hover effect for links */
 }
 
 .navbar-img {
@@ -73,15 +78,15 @@
   margin-left: 2rem;
   font-weight: bold;
   padding: 15px 20px;
-  background-color: #3498db;
-  color: white;
+  background-color: #73297f;
+  color: white; /* Ensure button text remains white */
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .nav-link.register-button:hover {
-  background-color: #2980b9;
+  background-color: #cf247e;
 }
 
 .navbar {
@@ -89,20 +94,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333; /* Adjust the background color as needed */
+  background-color: #73297f; /* Adjust the background color */
   padding: 1rem;
   z-index: 1100; /* Ensure the navbar is above other elements */
 }
 
+/* Updated text color for all navbar links */
 .navbar a {
-  color: white; /* Adjust the text color as needed */
+  color: white; /* Updated text color to white */
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
 }
 
 .navbar a:hover {
-  color: #ffd700; /* Adjust the hover color as needed */
+  color: #ffd700; /* Optional: Add hover effect */
 }
 
 @media (max-width: 768px) {
