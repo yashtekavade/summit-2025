@@ -1,0 +1,131 @@
+.teaser {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.about-content {
+  background: #ededed;
+  display: flex;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.img {
+  margin-right: 34rem;
+  margin-left: 10rem;
+  margin-top: 8rem;
+  display: flex;
+}
+
+.img_b {
+  margin-right: 30rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+
+.img_c {
+  margin-right: 30rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+
+.left-content {
+  margin-left: 10rem;
+  margin-right: 0rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.brochure-button {
+  position: absolute;
+  margin-top: 1.5rem;
+  margin-left: 0.2rem;
+  border-radius: 15px;
+  width: 8rem;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: 1px solid #3498db;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.brochure-button:hover {
+  transform: translate(5px, -5px);
+  background-color: #2980b9;
+  border-color: #2980b9;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exe-content {
+  background: #ededed;
+  display: flex;
+}
+
+.founder-content {
+  background: #ededed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background: #ededed;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem; /* Add padding for better spacing */
+}
+
+.footer-content,
+.contact-content,
+.details-content {
+  flex: 1;
+  margin-right: 0px; /* Add spacing between columns if desired */
+  padding: 5rem; /* Add padding for better spacing */
+  margin-left: 50px;
+}
+
+.details-content {
+  margin-top: 50px;
+}
+.footer-title,
+.contact-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.foot-pg,
+.contact-pg,
+.details-pg {
+  font-size: 14px;
+  margin-right: 0px; /* Reset margin-right for the last column */
+}
+
+@media only screen and (max-width: 400px) {
+  .brochure-button {
+    margin-top: 0.1rem !important;
+    margin-left: auto !important;
+  }
+
+  .img {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
