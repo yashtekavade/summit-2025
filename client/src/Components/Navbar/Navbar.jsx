@@ -78,7 +78,7 @@ const Navbar = () => {
                     */}
 
           <div>
-            <Link to="/register" className="nav-link register-button">
+            <Link to="" className="nav-link register-button">
               REGISTRATION OPEN SOON
             </Link>
           </div>
