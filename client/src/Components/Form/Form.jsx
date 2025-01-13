@@ -99,7 +99,7 @@ const Form = (props) => {
     try {
       // Make the POST request to the server URL
       const response = await axios.post(
-        "http://82.112.236.149:3300/summit/register",
+        "https://82.112.236.149:3300/summit/register",
         formDataWithImage
       );
 
@@ -382,7 +382,7 @@ const Form = (props) => {
           className="form-button"
           type="button"
           onClick={() => {
-            const paymentUrl = "https://paytm.me/s3EQ-xk";
+            const paymentUrl = "httpss://paytm.me/s3EQ-xk";
 
             // Open the payment URL in a new window
             window.open(paymentUrl, "_blank");
@@ -395,7 +395,7 @@ const Form = (props) => {
           className="form-button"
           type="button"
           onClick={() => {
-            const paymentUrl = "https://forms.gle/XkjHLXptYd4o1zxk8";
+            const paymentUrl = "httpss://forms.gle/XkjHLXptYd4o1zxk8";
 
             // Open the payment URL in a new window
             window.open(paymentUrl, "_blank");
