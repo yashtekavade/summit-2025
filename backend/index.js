@@ -1,22 +1,29 @@
-import app from './server.js'
-import summitDAO from './dao/summitDAO.js'
-import mongodb from 'mongodb'
-import dotenv from 'dotenv'
-dotenv.config()
+import app from './server.js';
+import summitDAO from './dao/summitDAO.js';
+import mongodb from 'mongodb';
+import dotenv from 'dotenv';
 
-const MongoClient = mongodb.MongoClient
+dotenv.config();
 
-const uri = process.env.MONGO_URL
+const MongoClient = mongodb.MongoClient;
+const uri = process.env.MONGO_URL;
 
-MongoClient.connect(uri).catch(err=>{
-    console.error(err.stack)
-    process.exit(1)
-}).catch(err=>{
-    console.error(err.stack)
-    process.exit(1)
-}).then(async client =>{
-    await summitDAO.InjectDB(client)
-    app.listen(process.env.PORT || 3000, ()=>{
-        console.log('Server is listening on port ' + process.env.PORT)
-    })
-})
+(async () => {
+  try {
+    const client = await MongoClient.connect(uri, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log('Connected to MongoDB');
+
+    await summitDAO.InjectDB(client);
+
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => {
+      console.log('Server is listening on port ' + port);
+    });
+  } catch (err) {
+    console.error('Failed to connect to MongoDB', err);
+    process.exit(1);
+  }
+})();
