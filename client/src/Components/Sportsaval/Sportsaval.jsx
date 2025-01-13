@@ -30,7 +30,7 @@ const Sportsaval = () => {
       setError(null);
 
       const response = await axios.post(
-        "https://pink-chicken-wig.cyclic.app/summit/sport-details",
+        "https://82.112.236.149:3300/summit/sport-details",
         { title: sport },
         {
           headers: {
