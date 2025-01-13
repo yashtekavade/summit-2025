@@ -378,13 +378,6 @@ const Form = (props) => {
             required
           />
         </label>
-
-        <h1 className="heading">
-          FILL UPTO THIS POINT IF YOUR TEAM ISN'T READY{" "}
-        </h1>
-
-        {renderPlayerInputs()}
-
         <button
           className="form-button"
           type="button"
@@ -410,8 +403,6 @@ const Form = (props) => {
         >
           Upload ScreenShot (Required)
         </button>
-        <h1 className="heading">DON'T SPAM CLICK SUBMIT BUTTON </h1>
-
         <button className="form-button" type="submit">
           Submit
         </button>
