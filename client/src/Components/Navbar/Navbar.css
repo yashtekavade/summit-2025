@@ -36,8 +36,8 @@
   margin-bottom: 1rem;
   margin-right: 2rem; /* Adjust margin for logo */
   margin-left: 2rem;
-  height: 40px; /* Increase logo height */
-  transform: scale(2.5); /* Adjust logo scale */
+  height: 55px; /* Slightly increase logo height */
+  transform: scale(2.7); /* Slightly increase logo scale */
 }
 
 /* Styles for the dropdown */
