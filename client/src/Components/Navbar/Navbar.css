@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #D2691E; /* Set background color */
+  background-color: white; /* Set background color to white */
   z-index: 1000; /* Ensure the navbar appears above other elements */
 }
 
@@ -20,15 +20,15 @@
   font-size: 16px; /* Reduce font size */
 }
 
-/* Changed text color to white */
+/* Adjusted text color for better visibility on white background */
 .nav-link {
   text-decoration: none;
-  color: white; /* Updated text color to white */
+  color: black; /* Updated text color to black */
   font-family: "Lato", bold;
 }
 
 .nav-link:hover {
-  color: #ffd700; /* Optional: Add hover effect for links */
+  color: #73297f; /* Optional: Add hover effect for links */
 }
 
 .navbar-img {
@@ -94,21 +94,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #73297f; /* Adjust the background color */
+  background-color: white; /* Adjust the background color to white */
   padding: 1rem;
   z-index: 1100; /* Ensure the navbar is above other elements */
 }
 
 /* Updated text color for all navbar links */
 .navbar a {
-  color: white; /* Updated text color to white */
+  color: black; /* Updated text color to black */
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
 }
 
 .navbar a:hover {
-  color: #ffd700; /* Optional: Add hover effect */
+  color: #73297f; /* Optional: Add hover effect */
 }
 
 @media (max-width: 768px) {
