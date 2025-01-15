@@ -1,19 +1,21 @@
 import React from "react";
 import Footer from "../Components/Footer/Footer";
-import i1 from "../assets/images/ingrp.webp";
+import i1 from "../assets/images/instruct/1.png";
+import i2 from "../assets/images/instruct/2.png";
+import i3 from "../assets/images/instruct/3.png";
 import "./Instructions.css";
 
 const Instructions = () => {
   return (
     <div>
-      <div className="inst-intro">
-        <div className="inst-heading">
-          <h1>Instructions For MIT- WPU Summit 2024</h1>
+      <div className="image-container" id="instructions-img-container">
+        <div className="image-group">
+          <img src={i1} alt="image 1" className="about-image" />
+          <img src={i2} alt="image 2" className="about-image" />
+          <img src={i3} alt="image 3" className="about-image" />
         </div>
       </div>
-      <div className="image-container">
-        <img src={i1} alt="about" className="about-image" />
-      </div>
+
       {/*
       <div className="inst-body">
         <h2 id="inst-headingone" className="inst-heading2">
@@ -74,7 +76,7 @@ const Instructions = () => {
         </div>
       </div>*/}
 
-      <Footer />
+    
     </div>
   );
 };
