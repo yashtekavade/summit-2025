@@ -23,27 +23,7 @@ const Home = () => {
       <div className="teaser">
         <video src={videoPath} autoPlay loop muted />
       </div>
-      <div className="about-content">
-        <div className="left-content">
-          <p className="sub">About the</p>
-          <p className="title">MIT WPU SUMMIT</p>
-          <p>
-            India’s biggest Annual Inter-Engineering Sports event hosted by
-            MIT-World Peace University committed towards the goal of ‘Nation
-            Building through Sports’. MIT World Peace University (MIT-WPU) has
-            been organizing the National Level Inter-Engineering Sports “SUMMIT”
-            since 2004. Every year Summit attracts over 5,000 students with
-            participation of more than 150 Engineering and Technological
-            Institutions across the country.
-          </p>
-          <button className="brochure-button" onClick={handleDownload}>
-            Brochure
-          </button>
-        </div>
-        <div className="img-container">
-          <img className="img" src={AboutImg} alt="about" loading="lazy" />
-        </div>
-      </div>
+
 
       <div className="founder-content">
         <div className="left-content">

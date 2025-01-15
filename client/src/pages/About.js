@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Components/Footer/Footer";
 import "./About.css";
-import a1 from "../assets/images/aboutgrp.webp";
+import a1 from "../assets/images/aboutsport.png";
 import { FlipWords } from "../Components/ui/flip-words";
 // import { FloatingDock } from "../Components/ui/floating-dock";
 // import {
@@ -15,35 +15,7 @@ import { FlipWords } from "../Components/ui/flip-words";
 
 const About = () => {
   const flipWords = ["unite", "inspire", "compete", "celebrate"];
-  // const dockItems = [
-  //   {
-  //     title: "Home",
-  //     icon: <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Products",
-  //     icon: <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Components",
-  //     icon: <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "GitHub",
-  //     icon: <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Twitter",
-  //     icon: <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-  //     href: "#",
-  //   },
-  // ];
-
-
+  
   return (
     <div>
       <div className="about-div">

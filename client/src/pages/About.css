@@ -45,41 +45,6 @@
   object-fit: cover;
 }
 
-/* Testimonials section styles */
-.testimonials-container {
-  width: 100%;
-  padding: 2rem 0;
-  background-color: #ffffff;
-}
-
-/* Add these new styles for the animated testimonials */
-.testimonial-content {
-  @apply max-w-4xl mx-auto;
-}
-
-.testimonial-image {
-  @apply w-full h-full object-cover rounded-3xl;
-  aspect-ratio: 1;
-}
-
-.testimonial-text {
-  @apply text-lg text-gray-600 dark:text-gray-300;
-}
-
-.testimonial-author {
-  @apply text-xl font-semibold text-gray-900 dark:text-white;
-}
-
-.testimonial-role {
-  @apply text-sm text-gray-500 dark:text-gray-400;
-}
-
-.navigation-button {
-  @apply h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 
-         flex items-center justify-center transition-all duration-300
-         hover:bg-gray-200 dark:hover:bg-gray-700;
-}
-
 /* Keep your existing content styles */
 .about-content {
   background: #ededed;
@@ -105,30 +70,28 @@
 .up-pg {
   margin-top: 1rem;
 }
+/* General styling for A4 images */
+.about-image {
+  width: 100%; /* Scales the image to the container's width */
+  max-width: 800px; /* Limits the maximum width to maintain proportions */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 10px auto; /* Adds spacing and centers the image */
+  display: block; /* Centers the image within its container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+  border: 1px solid #ddd; /* Optional border for styling */
+}
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  .testimonials-container {
-    background-color: #1a1a1a;
-  }
+/* Styling for the image group container */
+.image-group {
+  display: flex; /* Makes images align in a row */
+  flex-wrap: wrap; /* Ensures images wrap to the next line on smaller screens */
+  justify-content: center; /* Centers the images horizontally */
+  gap: 20px; /* Adds spacing between images */
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .about-title {
-    font-size: 3rem;
-    margin-top: 5rem;
-  }
-
-  .about-subtitle {
-    margin-right: 2rem;
-  }
-
-  .right-content {
-    margin: 2rem;
-  }
-
-  .testimonial-content {
-    padding: 0 1rem;
+@media only screen and (max-width: 768px) {
+  .about-image {
+    max-width: 90%; /* Reduces image width on smaller screens */
   }
 }
