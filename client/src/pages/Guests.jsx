@@ -7,12 +7,18 @@ import t4 from "../assets/images/t4.webp";
 import t5 from "../assets/images/t5.webp";
 import Footer from "../Components/Footer/Footer";
 import "./Guests.css";
+// import { FlipWords } from "../Components/ui/flip-words";
+
+// const Guests = () => {
+//   const flipWords = ["unite", "inspire", "compete", "celebrate"];
 
 const Guests = () => {
   return (
     <div>
       <div className="guest-div">
-        <h2 className="guest-title">Our Esteemed Guests</h2>
+        <h2 className="guest-title">OUR ESTEEMED GUESTS
+          {/* <FlipWords words={flipWords} /> */}
+        </h2>
       </div>
 
       {/* Add 5 images here */}
@@ -28,5 +34,6 @@ const Guests = () => {
     </div>
   );
 };
+// };
 
 export default Guests;

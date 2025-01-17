@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/images/GROUPEDMITSUMM.png";
-import brochurePath from "./Summit Brouchure.pdf";
+import brochurePath from "../../assets/Summit2025Brochure.pdf";
 
 const Navbar = () => {
   const handleDownload = () => {
