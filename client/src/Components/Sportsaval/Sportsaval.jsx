@@ -77,22 +77,16 @@ const Sportsaval = () => {
             onSelectSport={handleSelectSport}
             title="Table Tennis(W)"
           />
-          <SportsCard
-            onSelectSport={handleSelectSport}
-            title="Lawn Tennis(M)"
-          />
-          <SportsCard
-            onSelectSport={handleSelectSport}
-            title="Lawn Tennis(W)"
-          />
           <SportsCard onSelectSport={handleSelectSport} title="Chess(M)" />
           <SportsCard onSelectSport={handleSelectSport} title="Chess(W)" />
-          <SportsCard onSelectSport={handleSelectSport} title="Swimming(M)" />
-          <SportsCard onSelectSport={handleSelectSport} title="Swimming(W)" />
           <SportsCard onSelectSport={handleSelectSport} title="Esports_BGMI" />
           <SportsCard
             onSelectSport={handleSelectSport}
             title="Esports_Valorant"
+          />
+          <SportsCard
+            onSelectSport={handleSelectSport}
+            title="Esports_FIFA"
           />
         </div>
       </div>
