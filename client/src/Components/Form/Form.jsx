@@ -93,9 +93,6 @@ const Form = (props) => {
       formDataWithImage.append(key, value);
     });
 
-    // Append image data
-    formDataWithImage.append("image", image);
-
     try {
       // Make the POST request to the server URL
       const response = await axios.post(
@@ -212,13 +209,6 @@ const Form = (props) => {
     }
   };
 
-  const [image, setImage] = useState(null);
-
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    setImage(file);
-  };
-
   return (
     <div className="form-container">
       <ToastContainer />
@@ -248,7 +238,7 @@ const Form = (props) => {
             <option value="">Select Sport</option>
             <option value="Football(M)">Football (M)</option>
             <option value="Football(W)">Football (W)</option>
-            {/* <option value="Cricket(M)">Cricket (M)</option> */}
+            <option value="Cricket(M)">Cricket (M)</option>
             <option value="Basketball(M)">Basketball (M)</option>
             <option value="Basketball(W)">Basketball (W)</option>
             <option value="Volleyball(M)">Volleyball (M)</option>
@@ -258,14 +248,11 @@ const Form = (props) => {
             <option value="Badminton(W)">Badminton (W)</option>
             <option value="Table Tennis(M)">Table Tennis (M)</option>
             <option value="Table Tennis(W)">Table Tennis (W)</option>
-            <option value="Lawn Tennis(M)">Lawn Tennis (M)</option>
-            <option value="Lawn Tennis(W)">Lawn Tennis (W)</option>
             <option value="Chess(M)">Chess (M)</option>
             <option value="Chess(W)">Chess (W)</option>
-            <option value="Swimming(M)">Swimming (M)</option>
-            <option value="Swimming(W)">Swimming (W)</option>
             <option value="Esports_Valorant">Esports-Valorant</option>
             <option value="Esports_BGMI">Esports-BGMI</option>
+            <option value="Esports_BGMI">Esports-FIFA</option>
           </select>
         </label>
 

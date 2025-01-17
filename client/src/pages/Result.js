@@ -60,30 +60,6 @@ const Result = () => {
                   <p>
                     <strong>Incharge Details:</strong> {college.inchargeDetails}
                   </p>
-
-                  <h3>Player Details</h3>
-                  <ul>
-                    {[...Array(16).keys()].map((playerIndex) => (
-                      <li key={playerIndex}>
-                        <strong>Player {playerIndex + 1}:</strong>
-                        <div>
-                          <span>
-                            Name: {college[`playerName${playerIndex + 1}`]}
-                          </span>
-                        </div>
-                        <div>
-                          <span>
-                            Email: {college[`playerEmail${playerIndex + 1}`]}
-                          </span>
-                        </div>
-                        <div>
-                          <span>
-                            Phone: {college[`playerPhone${playerIndex + 1}`]}
-                          </span>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               )}
             </div>
