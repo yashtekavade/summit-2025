@@ -20,7 +20,7 @@ const About = () => {
     <div>
       <div className="about-div">
         <h2 className="about-title">
-          About MIT-WPU <FlipWords words={flipWords} /> Summit 2025.
+          ABOUT MIT-WPU <FlipWords words={flipWords} /> SUMMIT 2025.
         </h2>
         <p className="about-subtitle">
           India's biggest Annual Inter-Engineering Sports event hosted by
@@ -28,9 +28,9 @@ const About = () => {
           Building through Sports'.
         </p>
       </div>
-      <div className="image-container">
+      {/* <div className="image-container">
         <img src={a1} alt="about" className="about-image" loading="lazy" />
-      </div>
+      </div> */}
       {/* <div className="flex items-center justify-center h-[35rem] w-full mt-16">
         <FloatingDock
           mobileClassName="translate-y-20"
