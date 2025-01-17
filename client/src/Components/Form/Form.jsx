@@ -99,7 +99,7 @@ const Form = (props) => {
     try {
       // Make the POST request to the server URL
       const response = await axios.post(
-        "https://82.112.236.149:3300/summit/register",
+        "https://api.sportssummit.info/summit/register",
         formDataWithImage
       );
 
