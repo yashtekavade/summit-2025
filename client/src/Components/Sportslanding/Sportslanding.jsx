@@ -23,22 +23,22 @@ const Sportslanding = () => {
         <div className="sports-list">
           <SportsCard
             title="Cricket (M)"
-            subtitle="Rs. 2,500/-"
+            subtitle="Rs. 19,000/-"
             link="/register/Cricket(M)"
           />
           <SportsCard
             title="Football Men"
-            subtitle="Rs. 2,500/-"
+            subtitle="Rs. 7,200/-"
             link="/register/Football(M)"
           />
           <SportsCard
             title="Football Women"
-            subtitle="Rs. 2,500/-"
+            subtitle="Rs. 3,500/-"
             link="/register/Football(W)"
           />
           <SportsCard
             title="Basketball Men"
-            subtitle="Rs. 2,500/-"
+            subtitle="Rs. 2,800/-"
             link="/register/Basketball(M)"
           />
           <SportsCard
@@ -48,17 +48,17 @@ const Sportslanding = () => {
           />
           <SportsCard
             title="Volleyball Men"
-            subtitle="Rs. 2,000/-"
+            subtitle="Rs. 2,500/-"
             link="/register/Volleyball(M)"
           />
           <SportsCard
             title="Volleyball Women"
-            subtitle="Rs. 1,600/-"
+            subtitle="Rs. 1,800/-"
             link="/register/Volleyball(W)"
           />
           <SportsCard
             title="Kabaddi"
-            subtitle="Rs. 1,200/-"
+            subtitle="Rs. 1,500/-"
             link="/register/Kabaddi"
           />
           <SportsCard
@@ -68,27 +68,27 @@ const Sportslanding = () => {
           />
           <SportsCard
             title="Badminton Women"
-            subtitle="Rs. 1,500/-"
+            subtitle="Rs. 1,700/-"
             link="/register/Badminton(W)"
           />
           <SportsCard
             title="Table Tennis Men"
-            subtitle="Rs. 1,800/-"
+            subtitle="Rs. 2,000/-"
             link="/register/TableTennis(M)"
           />
           <SportsCard
             title="Table Tennis Women"
-            subtitle="Rs. 1,500/-"
+            subtitle="Rs. 1,600/-"
             link="/register/TableTennis(W)"
           />
           <SportsCard
             title="Chess Men"
-            subtitle="Rs. 1,200/-"
+            subtitle="Rs. 1,800/-"
             link="/register/Chess(M)"
           />
           <SportsCard
             title="Chess Women"
-            subtitle="Rs. 1,200/-"
+            subtitle="Rs. 1,800/-"
             link="/register/Chess(W)"
           />
           <SportsCard
@@ -103,7 +103,7 @@ const Sportslanding = () => {
           />
           <SportsCard
             title="Esports EA FIFA"
-            subtitle="Rs. 500/- Per team"
+            subtitle="Rs. 100/- Per team"
             link="/register/Esports_Valorant"
           />
         </div>
