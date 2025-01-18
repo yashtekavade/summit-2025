@@ -20,7 +20,7 @@ const About = () => {
     <div>
       <div className="about-div">
         <h2 className="about-title">
-          ABOUT MIT-WPU <FlipWords words={flipWords} /> SUMMIT 2025.
+          ABOUT MIT-WPU <FlipWords words={flipWords} /> SUMMIT 2024.
         </h2>
         <p className="about-subtitle">
           India's biggest Annual Inter-Engineering Sports event hosted by
