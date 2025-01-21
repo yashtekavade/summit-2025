@@ -1,89 +1,83 @@
-.rf-title {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  margin-top: 8rem;
-  font-size: 6rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  color: white !important;
+.registration-fees-container {
+  padding: 4rem 2rem 2rem; /* Add padding to the container */
+  max-width: 1200px; /* Set a max width for better readability */
+  margin: 0 auto; /* Center the container */
 }
 
-.rf-div {
-  height: 40rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  background-color: #cd2f72;
+.page-title {
+  text-align: center; /* Center the main title */
+  color: navy; /* Change title color to navy */
+  margin: 4rem 0 2rem; /* Add more space above the title */
 }
 
-.rf-img {
-  padding-top: 5rem;
-  width: 90%;
-}
-.rf-img2 {
-  margin-top: 12rem;
-  height: 20rem;
-  margin-left: 8rem;
-  width: 20rem;
-}
-.rfimg-title {
-  padding-top: 4rem;
-  font-size: 4rem;
-  color: white !important;
+.section-title {
+  color: navy; /* Change section titles to navy */
+  margin-top: 2rem; /* Add space above section titles */
+  margin-bottom: 1rem; /* Add space below section titles */
 }
 
-.rf-info {
-  color: white !important;
-  background-color: #2e7ec0;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  padding-bottom: 6rem;
-}
-#regpol {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.section-description {
+  margin-bottom: 1rem; /* Add space below descriptions */
 }
 
-.rf-rules {
-  padding-left: 1.5rem;
-  color: white !important;
-  background-color: #7c559e;
+.bullet-list {
+  list-style-type: disc; /* Ensure bullet points are visible */
+  padding-left: 2rem; /* Add padding to the left for bullets */
+  margin-bottom: 1rem; /* Add space below the list */
 }
 
-.rf-rules ul {
-  font-size: 1.5rem;
-  padding-bottom: 2.5rem;
+.bullet-list li {
+  color: navy; /* Change bullet point text color to navy */
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  margin-bottom: 0.5rem; /* Add space between bullet points */
 }
 
-.rf-rules li {
-  color: #fff;
-  font-size: 1.5rem;
-  padding-bottom: 2.5rem;
+.verification-note {
+  color: navy; /* Change note color to navy */
+  font-weight: bold; /* Make the note bold */
+  margin-top: 1rem; /* Add space above the note */
 }
 
-.rf-rules span {
-  color: #fff;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
+.date-detail {
+  color: navy; /* Change date detail color to navy */
+  font-weight: bold; /* Make the date details bold */
+  margin-bottom: 0.5rem; /* Add space below date details */
 }
 
-#firstspan {
-  margin-top: 2rem;
+.registration-restriction {
+  color: navy; /* Change restriction note color to navy */
+  font-weight: bold; /* Make the restriction note bold */
+  margin-top: 1rem; /* Add space above the restriction note */
 }
 
-.heading-top {
-  margin-bottom: 4rem;
-  margin-left: 0;
+.contact-section {
+  margin-top: 2rem; /* Add space above the contact section */
+  color: navy; /* Change contact section text color to navy */
 }
-.rf-img-holder {
-  display: flex;
-  flex-direction: row;
+
+.fees-section {
+  margin-top: 2rem; /* Add space above the fees section */
+}
+
+.image-container {
+  display: flex; /* Use flexbox to align images side by side */
+  justify-content: center; /* Center the images horizontally */
+  align-items: flex-end; /* Align images to the bottom */
+  margin-top: 2rem; /* Add some space above the image container */
+}
+
+.fee-structure {
+  max-width: 70%; /* Set a maximum width for the table image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.qr-image {
+  max-width: 25%; /* Set a maximum width for the QR code image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 1rem; /* Add some space to the left of the QR code */
+  align-self: flex-end; /* Align QR code to the bottom of the container */
+}
+
+.footer {
+  margin-top: 4rem; /* Add space above the footer */
 }

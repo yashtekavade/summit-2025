@@ -1,97 +1,84 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-/* About section styles */
+/* General About Section */
 .about-div {
   height: 30rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-self: center;
   justify-content: center;
-  margin-bottom: 2rem;
   background-color: #cd2f72;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
 .about-title {
   font-family: "Poppins", sans-serif;
-  margin-top: 10rem;
-  font-size: 3rem;
+  font-size: 4.0rem;
   font-weight: bold;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
   color: white !important;
 }
 
 .about-subtitle {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
-  margin-left: 2rem;
-  margin-right: 4.8rem;
   color: white !important;
+  margin-top: 1rem;
 }
 
-/* Image container styles */
-.image-container {
-  height: 100%;
-  width: 100%;
-  margin-top: -32px;
-}
-
-.about-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* Keep your existing content styles */
+/* About Content Section */
 .about-content {
+  padding: 2rem 1rem;
   background: #ededed;
-  margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.right-content {
-  margin-right: 5rem;
-  margin-left: 45rem;
-  margin-top: -25rem;
+.content-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.btm-content {
-  margin-top: 5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+.content-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
 }
 
-.low-pg {
-  margin-top: 1rem;
+.content-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  padding: 0 1rem;
 }
 
-.up-pg {
-  margin-top: 1rem;
-}
-/* General styling for A4 images */
 .about-image {
-  width: 100%; /* Scales the image to the container's width */
-  max-width: 800px; /* Limits the maximum width to maintain proportions */
-  height: auto; /* Maintains the aspect ratio */
-  margin: 10px auto; /* Adds spacing and centers the image */
-  display: block; /* Centers the image within its container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
-  border: 1px solid #ddd; /* Optional border for styling */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the image group container */
-.image-group {
-  display: flex; /* Makes images align in a row */
-  flex-wrap: wrap; /* Ensures images wrap to the next line on smaller screens */
-  justify-content: center; /* Centers the images horizontally */
-  gap: 20px; /* Adds spacing between images */
-}
-
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media only screen and (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .content-heading {
+    font-size: 1.5rem;
+  }
+
+  .content-paragraph {
+    font-size: 0.9rem;
+  }
+
   .about-image {
-    max-width: 90%; /* Reduces image width on smaller screens */
+    max-width: 90%;
   }
 }
