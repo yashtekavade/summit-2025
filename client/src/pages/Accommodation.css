@@ -1,46 +1,37 @@
-.acc-intro {
-  height: 40rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  background-color: #cd2f72;
-}
-.acc-heading {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  margin-top: 8rem;
-  font-size: 6rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  color: white !important;
-}
-.acc-heading2 {
-  margin-top: 4rem;
-  font-size: 2rem;
-  padding-bottom: 3rem;
-  color: white !important;
-}
-.acc-body {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  padding-bottom: 4rem;
-  background-color: #4dc8db;
-}
-.acc-text {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-  line-height: 2rem;
-  font-size: 1.5rem;
-  word-wrap: break-word;
-  margin-left: 2rem;
+.accommodation-container {
+  padding: 4rem 2rem; /* Add padding to the container */
+  max-width: 1200px; /* Set a max width for better readability */
+  margin: 0 auto; /* Center the container */
 }
 
-.section-container {
-  display: flex;
+.page-title {
+  text-align: center; /* Center the main title */
+  color: navy; /* Change title color to navy */
+  margin-bottom: 2rem; /* Add space below the title */
+}
+
+.accommodation-section {
+  margin-top: 2rem; /* Add space above the accommodation section */
+}
+
+.section-description {
+  margin-bottom: 1rem; /* Add space below descriptions */
+  font-size: 1.2rem; /* Make the description font slightly larger */
+}
+
+.bullet-list {
+  list-style-type: disc; /* Ensure bullet points are visible */
+  padding-left: 2rem; /* Add padding to the left for bullets */
+  margin-bottom: 1rem; /* Add space below the list */
+}
+
+.bullet-list li {
+  color: navy; /* Change bullet point text color to navy */
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  margin-bottom: 0.5rem; /* Add space between bullet points */
+}
+
+.bullet-list ul {
+  list-style-type: circle; /* Use circle bullets for nested lists */
+  padding-left: 2rem; /* Add padding to the left for nested bullets */
 }
