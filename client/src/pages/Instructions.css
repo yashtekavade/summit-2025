@@ -1,0 +1,42 @@
+.custom-box {
+    background-color: #cd2f72;
+    color: white;
+    padding: 9rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    
+  }
+  
+  .custom-box-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .custom-box-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    color: #f9f9f9;
+
+  }
+  
+  .rules-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+   
+  }
+  
+  .rules-list {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin: 0;
+  }
+  
+  .rules-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
