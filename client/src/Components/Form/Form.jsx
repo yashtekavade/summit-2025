@@ -317,6 +317,21 @@ const Form = (props) => {
             accommodation.
           </div>
         )}
+        <label className="form-label">
+          Food : <span className="-field">*</span>
+          <select
+            className="form-select"
+            name="accommodation"
+            value={formData.accommodation}
+            onChange={handleInputChange}
+            required
+          >
+            <option value="">Select Option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+
 
         <label className="form-label">
           Sports Head: <span className="-field">*</span>
@@ -329,6 +344,40 @@ const Form = (props) => {
             required
           />
         </label>
+        <label className="form-label">
+          Sports Director Name : <span className="-field">*</span>
+          <input
+            className="form-input"
+            type="text"
+            name="inchargeDetails"
+            value={formData.inchargeDetails}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+        <label className="form-label">
+          Sports Director Number: <span className="-field">*</span>
+          <input
+            className="form-input"
+            type="text"
+            name="inchargeDetails"
+            value={formData.inchargeDetails}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+        <label className="form-label">
+          Sports Director email: <span className="-field">*</span>
+          <input
+            className="form-input"
+            type="text"
+            name="inchargeDetails"
+            value={formData.inchargeDetails}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+
 
         <label className="form-label">
           Captain Name: <span className="-field">*</span>
@@ -361,6 +410,39 @@ const Form = (props) => {
             type="tel"
             name="captainno"
             value={formData.captainno}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+        <label className="form-label">
+          Vice Captain Name: <span className="-field">*</span>
+          <input
+            className="form-input"
+            type="text"
+            name="inchargeDetails"
+            value={formData.inchargeDetails}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+        <label className="form-label">
+          Vice Captain Number: <span className="-field">*</span>
+          <input
+            className="form-input"
+            type="text"
+            name="inchargeDetails"
+            value={formData.inchargeDetails}
+            onChange={handleInputChange}
+            required
+          />
+        </label>
+        <label className="form-label">
+          Transaction ID: <span className="-field">*</span>
+          <input
+            className="form-input"
+            type="text"
+            name="inchargeDetails"
+            value={formData.inchargeDetails}
             onChange={handleInputChange}
             required
           />
