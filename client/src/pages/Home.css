@@ -171,3 +171,15 @@
     margin-right: 5rem;
   }
 }
+
+.teaser {
+  position: relative; /* Ensures child elements are positioned relative to this container */
+  width: 100%; /* Make the teaser div occupy the full width of its parent */
+  overflow: hidden; /* Hides any content overflowing the container */
+}
+
+.teaser video {
+  width: 100%; /* Makes the video scale to fit the width of the parent */
+  height: auto; /* Maintains the video's aspect ratio */
+  display: block; /* Removes any unexpected gaps below the video */
+}
