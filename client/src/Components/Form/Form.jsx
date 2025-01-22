@@ -91,7 +91,7 @@ const Form = (props) => {
     // Append text data
     Object.entries(formData).forEach(([key, value]) => {
       formDataWithImage.append(key, value);
-    });
+    });   
 
     try {
       // Make the POST request to the server URL
@@ -297,40 +297,42 @@ const Form = (props) => {
         </label>
 
         <label className="form-label">
-          Accommodation : <span className="-field">*</span>
-          <select
-            className="form-select"
-            name="accommodation"
-            value={formData.accommodation}
-            onChange={handleInputChange}
-            required
-          >
-            <option value="">Select Option</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
-        </label>
+  Accommodation : <span className="-field">*</span>
+  <select
+    className="form-select"
+    name="accommodation"
+    value={formData.accommodation}
+    onChange={handleInputChange}
+    required
+  >
+    <option value="">Select Option</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+</label>
 
-        {formData.accommodation === "Yes" && (
-          <div className="accommodation-message">
-            A call will be made to sports head or sport captain regarding
-            accommodation.
-          </div>
-        )}
-        <label className="form-label">
-          Food : <span className="-field">*</span>
-          <select
-            className="form-select"
-            name="accommodation"
-            value={formData.accommodation}
-            onChange={handleInputChange}
-            required
-          >
-            <option value="">Select Option</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
-        </label>
+{formData.accommodation === "Yes" && (
+  <div className="accommodation-message">
+    A call will be made to the sports head or sports captain regarding
+    accommodation.
+  </div>
+)}
+
+<label className="form-label">
+  Food : <span className="-field">*</span>
+  <select
+    className="form-select"
+    name="food"
+    value={formData.food}
+    onChange={handleInputChange}
+    required
+  >
+    <option value="">Select Option</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+</label>
+
 
 
         <label className="form-label">
@@ -436,6 +438,18 @@ const Form = (props) => {
             required
           />
         </label>
+        <button
+          className="form-button"
+          type="button"
+          onClick={() => {
+            const paymentUrl = "https://paytm.me/PYTMPS/vujHEAP";
+
+            // Open the payment URL in a new window
+            window.open(paymentUrl, "_blank");
+          }}
+        >
+          Pay Now
+        </button>
         <label className="form-label">
           Transaction ID: <span className="-field">*</span>
           <input
@@ -447,24 +461,13 @@ const Form = (props) => {
             required
           />
         </label>
-        <button
-          className="form-button"
-          type="button"
-          onClick={() => {
-            const paymentUrl = "https://paytm.me/s3EQ-xk";
-
-            // Open the payment URL in a new window
-            window.open(paymentUrl, "_blank");
-          }}
-        >
-          Pay Now
-        </button>
+        
 
         <button
           className="form-button"
           type="button"
           onClick={() => {
-            const paymentUrl = "https://forms.gle/XkjHLXptYd4o1zxk8";
+            const paymentUrl = "https://docs.google.com/forms/d/1N96FdIVuQ0FfJRSoKfHgjqKz-2IItcoihXWj0GkqfH4/preview";
 
             // Open the payment URL in a new window
             window.open(paymentUrl, "_blank");
