@@ -26,6 +26,7 @@ const sportsPlayerCount = {
   "Swimming(W)": 6,
   Esports_BGMI: 4,
   Esports_Valorant: 5,
+  Esports_FIFA: 4,
 };
 
 const Form = (props) => {
@@ -91,7 +92,7 @@ const Form = (props) => {
     // Append text data
     Object.entries(formData).forEach(([key, value]) => {
       formDataWithImage.append(key, value);
-    });   
+    });
 
     try {
       // Make the POST request to the server URL
@@ -99,7 +100,7 @@ const Form = (props) => {
         "https://api.sportssummit.info/summit/register",
         formDataWithImage
       );
-
+      console.log(formDataWithImage);
       console.log("Form submitted:", response.data);
 
       // Display success toast
@@ -252,7 +253,7 @@ const Form = (props) => {
             <option value="Chess(W)">Chess (W)</option>
             <option value="Esports_Valorant">Esports-Valorant</option>
             <option value="Esports_BGMI">Esports-BGMI</option>
-            <option value="Esports_BGMI">Esports-FIFA</option>
+            <option value="Esports_FIFA">Esports-FIFA</option>
           </select>
         </label>
 
@@ -297,43 +298,41 @@ const Form = (props) => {
         </label>
 
         <label className="form-label">
-  Accommodation : <span className="-field">*</span>
-  <select
-    className="form-select"
-    name="accommodation"
-    value={formData.accommodation}
-    onChange={handleInputChange}
-    required
-  >
-    <option value="">Select Option</option>
-    <option value="Yes">Yes</option>
-    <option value="No">No</option>
-  </select>
-</label>
+          Accommodation : <span className="-field">*</span>
+          <select
+            className="form-select"
+            name="accommodation"
+            value={formData.accommodation}
+            onChange={handleInputChange}
+            required
+          >
+            <option value="">Select Option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
 
-{formData.accommodation === "Yes" && (
-  <div className="accommodation-message">
-    A call will be made to the sports head or sports captain regarding
-    accommodation.
-  </div>
-)}
+        {formData.accommodation === "Yes" && (
+          <div className="accommodation-message">
+            A call will be made to the sports head or sports captain regarding
+            accommodation.
+          </div>
+        )}
 
-<label className="form-label">
-  Food : <span className="-field">*</span>
-  <select
-    className="form-select"
-    name="food"
-    value={formData.food}
-    onChange={handleInputChange}
-    required
-  >
-    <option value="">Select Option</option>
-    <option value="Yes">Yes</option>
-    <option value="No">No</option>
-  </select>
-</label>
-
-
+        <label className="form-label">
+          Food : <span className="-field">*</span>
+          <select
+            className="form-select"
+            name="food"
+            value={formData.food}
+            onChange={handleInputChange}
+            required
+          >
+            <option value="">Select Option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
 
         <label className="form-label">
           Sports Head: <span className="-field">*</span>
@@ -379,7 +378,6 @@ const Form = (props) => {
             required
           />
         </label>
-
 
         <label className="form-label">
           Captain Name: <span className="-field">*</span>
@@ -461,13 +459,13 @@ const Form = (props) => {
             required
           />
         </label>
-        
 
         <button
           className="form-button"
           type="button"
           onClick={() => {
-            const paymentUrl = "https://docs.google.com/forms/d/1N96FdIVuQ0FfJRSoKfHgjqKz-2IItcoihXWj0GkqfH4/preview";
+            const paymentUrl =
+              "https://docs.google.com/forms/d/1N96FdIVuQ0FfJRSoKfHgjqKz-2IItcoihXWj0GkqfH4/preview";
 
             // Open the payment URL in a new window
             window.open(paymentUrl, "_blank");
