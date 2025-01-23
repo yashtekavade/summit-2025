@@ -335,130 +335,136 @@ const Form = (props) => {
         </label>
 
         <label className="form-label">
-          Sports Head: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="text"
-            name="inchargeDetails"
-            value={formData.inchargeDetails}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label className="form-label">
-          Sports Director Name : <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="text"
-            name="inchargeDetails"
-            value={formData.inchargeDetails}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label className="form-label">
-          Sports Director Number: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="text"
-            name="inchargeDetails"
-            value={formData.inchargeDetails}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label className="form-label">
-          Sports Director email: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="text"
-            name="inchargeDetails"
-            value={formData.inchargeDetails}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
+  Sports Head: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="text"
+    name="sportsHead"
+    value={formData.sportsHead}
+    onChange={handleInputChange}
+    required
+  />
+</label>
 
-        <label className="form-label">
-          Captain Name: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="text"
-            name="captainDetails"
-            value={formData.captainDetails}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
+<label className="form-label">
+  Sports Director Name: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="text"
+    name="sportsDirectorName"
+    value={formData.sportsDirectorName}
+    onChange={handleInputChange}
+    required
+  />
+</label>
 
-        <label className="form-label">
-          Captain Mail: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="email"
-            name="captainMail"
-            value={formData.captainMail}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
+<label className="form-label">
+  Sports Director Number: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="text"
+    name="sportsDirectorNumber"
+    value={formData.sportsDirectorNumber}
+    onChange={handleInputChange}
+    required
+  />
+</label>
 
-        <label className="form-label">
-          Captain PhoneNo: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="tel"
-            name="captainno"
-            value={formData.captainno}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label className="form-label">
-          Vice Captain Name: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="text"
-            name="inchargeDetails"
-            value={formData.inchargeDetails}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <label className="form-label">
-          Vice Captain Number: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="text"
-            name="inchargeDetails"
-            value={formData.inchargeDetails}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
-        <button
-          className="form-button"
-          type="button"
-          onClick={() => {
-            const paymentUrl = "https://paytm.me/PYTMPS/vujHEAP";
+<label className="form-label">
+  Sports Director Email: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="email"
+    name="sportsDirectorEmail"
+    value={formData.sportsDirectorEmail}
+    onChange={handleInputChange}
+    required
+  />
+</label>
 
-            // Open the payment URL in a new window
-            window.open(paymentUrl, "_blank");
-          }}
-        >
-          Pay Now
-        </button>
-        <label className="form-label">
-          Transaction ID: <span className="-field">*</span>
-          <input
-            className="form-input"
-            type="text"
-            name="inchargeDetails"
-            value={formData.inchargeDetails}
-            onChange={handleInputChange}
-            required
-          />
-        </label>
+<label className="form-label">
+  Captain Name: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="text"
+    name="captainName"
+    value={formData.captainName}
+    onChange={handleInputChange}
+    required
+  />
+</label>
+
+<label className="form-label">
+  Captain Mail: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="email"
+    name="captainMail"
+    value={formData.captainMail}
+    onChange={handleInputChange}
+    required
+  />
+</label>
+
+<label className="form-label">
+  Captain Phone No: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="tel"
+    name="captainPhone"
+    value={formData.captainPhone}
+    onChange={handleInputChange}
+    required
+  />
+</label>
+
+<label className="form-label">
+  Vice Captain Name: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="text"
+    name="viceCaptainName"
+    value={formData.viceCaptainName}
+    onChange={handleInputChange}
+    required
+  />
+</label>
+
+<label className="form-label">
+  Vice Captain Number: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="text"
+    name="viceCaptainNumber"
+    value={formData.viceCaptainNumber}
+    onChange={handleInputChange}
+    required
+  />
+</label>
+
+<button
+  className="form-button"
+  type="button"
+  onClick={() => {
+    const paymentUrl = "https://paytm.me/PYTMPS/vujHEAP";
+    window.open(paymentUrl, "_blank");
+  }}
+>
+  Pay Now
+</button>
+
+<label className="form-label">
+  Transaction ID: <span className="-field">*</span>
+  <input
+    className="form-input"
+    type="text"
+    name="transactionId"
+    value={formData.transactionId}
+    onChange={handleInputChange}
+    required
+  />
+</label>
+
 
         <button
           className="form-button"
