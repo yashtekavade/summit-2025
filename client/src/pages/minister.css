@@ -1,32 +1,55 @@
+.message-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center the container */
+  padding: 2rem; /* Add padding to the container */
+  background-color: #f8f9fa; /* Light background color for the container */
+}
+
 .min-title {
   font-family: "Poppins", sans-serif;
-  margin-top: 10rem;
-  font-size: 6rem;
+  margin-top: 5rem; /* Space above the title */
+  font-size: 4rem; /* Font size for the title */
   font-weight: bold;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  color: white !important;
+  margin-bottom: 2rem; /* Space below the title */
+  color: #cd2f72; /* Title color */
+  text-align: center; /* Center-align the title */
 }
 
 .min-div {
-  height: 40rem;
-  width: 100%;
+  width: 100%; /* Full width of the container */
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  background-color: #cd2f72;
-}
-
-.about-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  margin-bottom: 2rem; /* Space below the message div */
 }
 
 .image-container {
-  height: 100%;
-  width: 100%;
-  margin-top: -52px;
+  width: 100%; /* Full width of the container */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.min-image {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 60vh; /* Limit the height to 60% of the viewport height */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+  .min-title {
+    font-size: 3rem; /* Adjust title size for smaller screens */
+  }
+
+  .min-image {
+    max-height: 50vh; /* Adjust max height for smaller screens */
+  }
 }
