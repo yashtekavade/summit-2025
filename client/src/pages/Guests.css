@@ -10,7 +10,7 @@
 }
 
 .guest-div {
-  height: 30rem;
+  height: auto; /* Change to auto for better responsiveness */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,54 +20,35 @@
   background-color: #edba31;
 }
 
-.guest-heading {
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.image-container {
+  display: flex; /* Use flexbox for collage layout */
+  flex-wrap: wrap; /* Allow images to wrap */
+  justify-content: center; /* Center images */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
 }
 
-.guest-img-head {
-  height: 300px;
-  width: 520px;
-  border-radius: 20px;
-  margin: 20px;
-  border: 1px solid black;
+.guest-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* No rounded corners for seamless effect */
+  object-fit: cover; /* Cover the area without distortion */
 }
 
-.grpimg {
-  height: 400px;
-  width: 660px;
-  border-radius: 20px;
-  margin: 20px;
-  border: 1px solid black;
+.guest-image:nth-child(odd) {
+  margin-right: -5px; /* Adjust margin for odd images to create a seamless effect */
 }
 
-.guest-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.guest-image:nth-child(even) {
+  margin-left: -5px; /* Adjust margin for even images to create a seamless effect */
 }
 
-.guest-div {
-  height: 30rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  margin-bottom: 4rem;
-  background-color: #edba31;
-}
-.guest-div2 {
-  padding: 10px;
-  margin: 10px;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
+@media (max-width: 768px) {
+  .guest-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .guest-image {
+    width: 100%; /* Full width for smaller screens */
+  }
 }

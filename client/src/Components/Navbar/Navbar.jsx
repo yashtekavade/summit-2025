@@ -35,9 +35,9 @@ const Navbar = () => {
                 Sport's Minister Message
               </Link>
               
-              <Link to="/organising-team" className="dropdown-link">
+              {/* <Link to="/organising-team" className="dropdown-link">
                 Organising Team
-              </Link>
+              </Link> */}
               {/* <Link to="/event-head" className="dropdown-link">
                 Event Head
               </Link>

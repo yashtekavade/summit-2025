@@ -2,12 +2,15 @@
   padding: 4rem 2rem; /* Add padding to the container */
   max-width: 1200px; /* Set a max width for better readability */
   margin: 0 auto; /* Center the container */
+  background-color: #f8f9fa; /* Light background color for the container */
 }
 
 .page-title {
   text-align: center; /* Center the main title */
-  color: navy; /* Change title color to navy */
+  color: #cd2f72; /* Change title color to a specific shade */
   margin-bottom: 2rem; /* Add space below the title */
+  font-size: 3rem; /* Font size for the title */
+  font-weight: bold; /* Bold font weight */
 }
 
 .accommodation-section {
@@ -17,6 +20,7 @@
 .section-description {
   margin-bottom: 1rem; /* Add space below descriptions */
   font-size: 1.2rem; /* Make the description font slightly larger */
+  color: #333; /* Darker color for better readability */
 }
 
 .bullet-list {
@@ -26,7 +30,7 @@
 }
 
 .bullet-list li {
-  color: navy; /* Change bullet point text color to navy */
+  color: #333; /* Change bullet point text color to dark */
   font-size: 1.2rem; /* Adjust font size for better readability */
   margin-bottom: 0.5rem; /* Add space between bullet points */
 }
@@ -34,4 +38,33 @@
 .bullet-list ul {
   list-style-type: circle; /* Use circle bullets for nested lists */
   padding-left: 2rem; /* Add padding to the left for nested bullets */
+}
+
+/* Footer styles */
+footer {
+  width: 100%; /* Ensure footer takes full width */
+  background-color: #f8f9fa; /* Change background color if needed */
+  padding: 1rem 0; /* Add padding to the footer */
+  text-align: center; /* Center footer text */
+  position: relative; /* Ensure footer is positioned correctly */
+  bottom: 0; /* Stick to the bottom */
+}
+
+/* Optional: Make the layout responsive */
+@media (max-width: 768px) {
+  .accommodation-container {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .page-title {
+    font-size: 2.5rem; /* Adjust title size for smaller screens */
+  }
+
+  .section-description {
+    font-size: 1rem; /* Adjust description font size for smaller screens */
+  }
+
+  .bullet-list li {
+    font-size: 1rem; /* Adjust bullet point size for smaller screens */
+  }
 }
