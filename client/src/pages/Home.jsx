@@ -24,7 +24,6 @@ const Home = () => {
         <video src={videoPath} autoPlay loop muted />
       </div>
 
-
       <div className="founder-content">
         <div className="left-content">
           <p className="sub">About the</p>

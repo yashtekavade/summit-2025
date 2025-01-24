@@ -18,7 +18,7 @@ import Login from "./pages/Login.js";
 import Register from "./pages/Register";
 import Admin from "./pages/Admin";
 import Accommodation from "./pages/Accommodation";
-
+import EsportsFIFARegistration from "./pages/Registrationpages/EsportsFIFARegistration";
 import CricketMRegistration from "./pages/Registrationpages/CricketMRegistration";
 import FootballMRegistration from "./pages/Registrationpages/FootballMRegistration";
 import FootballWRegistration from "./pages/Registrationpages/FootballWRegistration";
@@ -139,6 +139,10 @@ const App = () => {
           <Route
             path="register/Esports_Valorant"
             element={<EsportsValorantRegistration sport="Esports_Valorant" />}
+          />
+           <Route
+            path="register/Esports_FIFA"
+            element={<EsportsFIFARegistration sport="Esports_FIFA" />}
           />
           <Route path="/admin/result" element={<Result />} />{" "}
           <Route path="/890123fasgbavblaadmin" element={<Admin />} />
