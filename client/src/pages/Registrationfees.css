@@ -1,83 +1,130 @@
+/* Updated Registrationfees.css */
+
+body {
+  margin: 0; /* Remove default body margin to avoid cutting off elements */
+}
+
 .registration-fees-container {
-  padding: 4rem 2rem 2rem; /* Add padding to the container */
-  max-width: 1200px; /* Set a max width for better readability */
-  margin: 0 auto; /* Center the container */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .page-title {
-  text-align: center; /* Center the main title */
-  color: navy; /* Change title color to navy */
-  margin: 4rem 0 2rem; /* Add more space above the title */
+  font-size: 2rem;
+  color: #4166af; /* Original color */
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px; /* Ensure space at the top */
 }
 
 .section-title {
-  color: navy; /* Change section titles to navy */
-  margin-top: 2rem; /* Add space above section titles */
-  margin-bottom: 1rem; /* Add space below section titles */
+  font-size: 1.5rem;
+  color: #4166af; /* Original color */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
 }
 
 .section-description {
-  margin-bottom: 1rem; /* Add space below descriptions */
+  font-size: 1rem;
+  color: #555; /* Original color */
+  margin-bottom: 15px;
 }
 
 .bullet-list {
-  list-style-type: disc; /* Ensure bullet points are visible */
-  padding-left: 2rem; /* Add padding to the left for bullets */
-  margin-bottom: 1rem; /* Add space below the list */
+  margin-left: 20px;
+  list-style-type: disc;
+  color: #555;
 }
 
 .bullet-list li {
-  color: navy; /* Change bullet point text color to navy */
-  font-size: 1.2rem; /* Adjust font size for better readability */
-  margin-bottom: 0.5rem; /* Add space between bullet points */
-}
-
-.verification-note {
-  color: navy; /* Change note color to navy */
-  font-weight: bold; /* Make the note bold */
-  margin-top: 1rem; /* Add space above the note */
+  margin-bottom: 10px;
 }
 
 .date-detail {
-  color: navy; /* Change date detail color to navy */
-  font-weight: bold; /* Make the date details bold */
-  margin-bottom: 0.5rem; /* Add space below date details */
+  font-size: 1rem;
+  color: #333; /* Original color */
+  margin-bottom: 10px;
 }
 
 .registration-restriction {
-  color: navy; /* Change restriction note color to navy */
-  font-weight: bold; /* Make the restriction note bold */
-  margin-top: 1rem; /* Add space above the restriction note */
+  font-size: 0.9rem;
+  color: #d9534f;
+  margin-top: 20px;
 }
 
-.contact-section {
-  margin-top: 2rem; /* Add space above the contact section */
-  color: navy; /* Change contact section text color to navy */
-}
-
-.fees-section {
-  margin-top: 2rem; /* Add space above the fees section */
+.contact-section .section-description {
+  font-size: 1rem;
+  color: #555; /* Original color */
+  margin-bottom: 5px;
 }
 
 .image-container {
-  display: flex; /* Use flexbox to align images side by side */
-  justify-content: center; /* Center the images horizontally */
-  align-items: flex-end; /* Align images to the bottom */
-  margin-top: 2rem; /* Add some space above the image container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .fee-structure {
-  max-width: 70%; /* Set a maximum width for the table image */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 60%; /* Reduce size to 60% of container width */
+  height: auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .qr-image {
-  max-width: 25%; /* Set a maximum width for the QR code image */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 1rem; /* Add some space to the left of the QR code */
-  align-self: flex-end; /* Align QR code to the bottom of the container */
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.footer {
-  margin-top: 4rem; /* Add space above the footer */
+a {
+  color: #007bff; /* Original link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.important-dates-section,
+.fees-section {
+  margin-top: 30px;
+}
+
+footer {
+  width: 100%; /* Ensure footer spans full width */
+  text-align: center;
+  background-color: #fff; /* Match footer background color */
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for emphasis */
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .image-container {
+    flex-direction: column; /* Stack images vertically on small screens */
+  }
+
+  .fee-structure {
+    max-width: 100%; /* Ensure images resize on smaller screens */
+  }
+
+  .qr-image {
+    width: 150px; /* Adjust QR image size for smaller screens */
+    height: 150px;
+  }
 }

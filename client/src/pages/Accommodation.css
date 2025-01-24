@@ -1,70 +1,84 @@
+/* Accommodation.css */
+
+body {
+  margin: 0; /* Remove default margins to avoid unexpected layout issues */
+  padding: 0;
+}
+
 .accommodation-container {
-  padding: 4rem 2rem; /* Add padding to the container */
-  max-width: 1200px; /* Set a max width for better readability */
-  margin: 0 auto; /* Center the container */
-  background-color: #f8f9fa; /* Light background color for the container */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh; /* Ensures the container fills the full viewport height */
+  box-sizing: border-box;
 }
 
 .page-title {
-  text-align: center; /* Center the main title */
-  color: #cd2f72; /* Change title color to a specific shade */
-  margin-bottom: 2rem; /* Add space below the title */
-  font-size: 3rem; /* Font size for the title */
-  font-weight: bold; /* Bold font weight */
+  font-size: 2rem;
+  color: #333; /* Neutral color for better readability */
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px; /* Ensure space at the top */
+  overflow-wrap: break-word; /* Prevents long text from overflowing */
 }
 
 .accommodation-section {
-  margin-top: 2rem; /* Add space above the accommodation section */
+  margin-top: 100px;
 }
 
 .section-description {
-  margin-bottom: 1rem; /* Add space below descriptions */
-  font-size: 1.2rem; /* Make the description font slightly larger */
-  color: #333; /* Darker color for better readability */
+  font-size: 1rem;
+  color: #555; /* Softer tone for descriptions */
+  margin-bottom: 15px;
 }
 
 .bullet-list {
-  list-style-type: disc; /* Ensure bullet points are visible */
-  padding-left: 2rem; /* Add padding to the left for bullets */
-  margin-bottom: 1rem; /* Add space below the list */
+  margin-left: 20px;
+  list-style-type: disc;
+  color: #555;
 }
 
 .bullet-list li {
-  color: #333; /* Change bullet point text color to dark */
-  font-size: 1.2rem; /* Adjust font size for better readability */
-  margin-bottom: 0.5rem; /* Add space between bullet points */
+  margin-bottom: 10px;
+}
+
+.bullet-list strong {
+  color: #444; /* Highlight for bolded text */
 }
 
 .bullet-list ul {
-  list-style-type: circle; /* Use circle bullets for nested lists */
-  padding-left: 2rem; /* Add padding to the left for nested bullets */
+  list-style-type: circle;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #666;
 }
 
-/* Footer styles */
+.bullet-list ul li {
+  margin-bottom: 8px;
+}
+
 footer {
-  width: 100%; /* Ensure footer takes full width */
-  background-color: #f8f9fa; /* Change background color if needed */
-  padding: 1rem 0; /* Add padding to the footer */
-  text-align: center; /* Center footer text */
-  position: relative; /* Ensure footer is positioned correctly */
-  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Footer spans full width */
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+  position: relative; /* Prevents it from shrinking or floating unexpectedly */
+  bottom: 0;
+  left: 0;
 }
 
-/* Optional: Make the layout responsive */
 @media (max-width: 768px) {
-  .accommodation-container {
-    padding: 2rem 1rem; /* Adjust padding for smaller screens */
-  }
-
   .page-title {
-    font-size: 2.5rem; /* Adjust title size for smaller screens */
+    font-size: 1.8rem;
   }
 
   .section-description {
-    font-size: 1rem; /* Adjust description font size for smaller screens */
+    font-size: 0.9rem;
   }
 
-  .bullet-list li {
-    font-size: 1rem; /* Adjust bullet point size for smaller screens */
+  .bullet-list {
+    margin-left: 15px;
   }
 }
