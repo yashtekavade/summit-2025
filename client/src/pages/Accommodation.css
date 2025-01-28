@@ -1,37 +1,84 @@
+/* Accommodation.css */
+
+body {
+  margin: 0; /* Remove default margins to avoid unexpected layout issues */
+  padding: 0;
+}
+
 .accommodation-container {
-  padding: 4rem 2rem; /* Add padding to the container */
-  max-width: 1200px; /* Set a max width for better readability */
-  margin: 0 auto; /* Center the container */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh; /* Ensures the container fills the full viewport height */
+  box-sizing: border-box;
 }
 
 .page-title {
-  text-align: center; /* Center the main title */
-  color: navy; /* Change title color to navy */
-  margin-bottom: 2rem; /* Add space below the title */
+  font-size: 2rem;
+  color: #333; /* Neutral color for better readability */
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px; /* Ensure space at the top */
+  overflow-wrap: break-word; /* Prevents long text from overflowing */
 }
 
 .accommodation-section {
-  margin-top: 2rem; /* Add space above the accommodation section */
+  margin-top: 100px;
 }
 
 .section-description {
-  margin-bottom: 1rem; /* Add space below descriptions */
-  font-size: 1.2rem; /* Make the description font slightly larger */
+  font-size: 1rem;
+  color: #555; /* Softer tone for descriptions */
+  margin-bottom: 15px;
 }
 
 .bullet-list {
-  list-style-type: disc; /* Ensure bullet points are visible */
-  padding-left: 2rem; /* Add padding to the left for bullets */
-  margin-bottom: 1rem; /* Add space below the list */
+  margin-left: 20px;
+  list-style-type: disc;
+  color: #555;
 }
 
 .bullet-list li {
-  color: navy; /* Change bullet point text color to navy */
-  font-size: 1.2rem; /* Adjust font size for better readability */
-  margin-bottom: 0.5rem; /* Add space between bullet points */
+  margin-bottom: 10px;
+}
+
+.bullet-list strong {
+  color: #444; /* Highlight for bolded text */
 }
 
 .bullet-list ul {
-  list-style-type: circle; /* Use circle bullets for nested lists */
-  padding-left: 2rem; /* Add padding to the left for nested bullets */
+  list-style-type: circle;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #666;
+}
+
+.bullet-list ul li {
+  margin-bottom: 8px;
+}
+
+footer {
+  width: 100%; /* Footer spans full width */
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+  position: relative; /* Prevents it from shrinking or floating unexpectedly */
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .bullet-list {
+    margin-left: 15px;
+  }
 }

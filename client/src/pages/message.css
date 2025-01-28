@@ -1,32 +1,49 @@
 .msg-title {
   font-family: "Poppins", sans-serif;
-  margin-top: 10rem;
-  font-size: 6rem;
+  margin-top: 10rem; /* Space above the title */
+  font-size: 4rem; /* Adjusted font size for better readability */
   font-weight: bold;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  color: white !important;
+  margin-bottom: 2rem; /* Space below the title */
+  margin-left: 2rem; /* Space on the left */
+  color: white !important; /* Title color */
+  text-align: center; /* Center-align the title */
 }
 
 .msg-div {
-  height: 40rem;
+  height: auto; /* Allow height to adjust based on content */
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  background-color: #cd2f72;
-}
-
-.exe-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  margin-bottom: 2rem; /* Space below the message div */
+  background-color: #cd2f72; /* Background color */
+  padding: 5rem; /* Padding for the message div */
 }
 
 .image-container {
-  height: 100%;
-  width: 100%;
-  margin-top: -32px;
+  width: 100%; /* Full width of the container */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin: 0; /* Remove margin */
+  padding: 5rem; /* Remove padding */
+}
+
+.exe-image {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 60vh; /* Limit the height to 60% of the viewport height */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+  .msg-title {
+    font-size: 3rem; /* Adjust title size for smaller screens */
+  }
+
+  .exe-image {
+    max-height: 50vh; /* Adjust max height for smaller screens */
+  }
 }
