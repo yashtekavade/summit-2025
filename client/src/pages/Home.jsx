@@ -29,21 +29,13 @@ const Home = () => {
           <p className="sub">About the</p>
           <p className="title">Founders Inspiration</p>
           <p>
-            At the outset, I would like to congratulate the organizers of
-            'Summit 2024' for their sustained & committed efforts in organizing
-            this event each year for 17 long years! My dear friends, you all are
-            perhaps aware that the MAEER's MIT Group of Institutions, Pune was
-            established in 1983, reposing full faith on Swami Vivekananda's
-            prophetic words that, "Union of Science & Spirituality alone will
-            bring Peace & Harmony to Mankind." But friends, Swamiji had also
-            once said that, "It is better to run behind football on the ground
-            than just sit in a temple & read Gita. It is the optimum blend of
-            pursuing academics, sports & imbibing values that one can become
-            "Physically Fit, Mentally Alert, Intellectually Sharp & Spiritually
-            Elevated" The organization of 'Summit each year is our effort
-            towards this end. hope & feel confident that the contestants will
-            give off their best to excel in every sport that they have
-            participated in. Wish you all the best! Thank You!
+          At the outset, I would like to congratulate the organizers of 'Summit 2025' for their sustained & committed efforts in organizing this event each year for 17 long years! 
+          My dear friends, you all are perhaps aware that the MAEER's MIT Group of Institutions, Pune was established in 1983, reposing full faith on Swami Vivekananda's prophetic 
+          words that, "Union of Science & Spirituality alone will bring Peace & Harmony to Mankind." But friends, Swamiji had also once said that, "It is better to run behind 
+          football on the ground than just sit in a temple & read Gita. It is the optimum blend of pursuing academics, sports & imbibing values that one can become "Physically
+           Fit, Mentally Alert, Intellectually Sharp & Spiritually Elevated" The organization of 'Summit each year is our effort towards this end. hope & feel confident that the 
+           contestants will give off their best to excel in every sport that they have participated in. 
+          Wish you all the best! Thank You!
           </p>
         </div>
         <div className="img-container">
