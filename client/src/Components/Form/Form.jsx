@@ -471,7 +471,7 @@ const Form = (props) => {
           type="button"
           onClick={() => {
             const paymentUrl =
-              "https://docs.google.com/forms/d/1N96FdIVuQ0FfJRSoKfHgjqKz-2IItcoihXWj0GkqfH4/preview";
+              "https://forms.gle/2fLgJgpQyTKa5fhb9";
 
             // Open the payment URL in a new window
             window.open(paymentUrl, "_blank");
