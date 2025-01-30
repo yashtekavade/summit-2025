@@ -23,7 +23,7 @@ const Sportslanding = () => {
         <div className="sports-list">
           <SportsCard
             title="Cricket (M)"
-            subtitle="Rs. 19,000/-"
+            subtitle="Rs. 21,000/-"
             link="/register/Cricket(M)"
           />
           <SportsCard
