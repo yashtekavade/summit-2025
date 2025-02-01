@@ -103,7 +103,7 @@ const Sportslanding = () => {
           />
           <SportsCard
             title="Esports EA FIFA"
-            subtitle="Rs. 100/- Per team"
+            subtitle="Rs. 200/- Per team"
             link="/register/Esports_FIFA"
           />
         </div>
