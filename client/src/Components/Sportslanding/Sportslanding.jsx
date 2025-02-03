@@ -20,6 +20,7 @@ const Sportslanding = () => {
       <Navbar />
       <div className="sports-landing-container">
         <h2>SELECT A SPORT</h2>
+        <h2>Please call the registration team before registering to avoid problems!</h2>
         <div className="sports-list">
           <SportsCard
             title="Cricket (M)"
