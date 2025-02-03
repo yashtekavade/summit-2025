@@ -79,7 +79,7 @@ const Navbar = () => {
 
           <div>
             <Link to="" className="nav-link register-button">
-              REGISTRATION OPEN SOON
+              REGISTRATION NOW
             </Link>
           </div>
           <div>
