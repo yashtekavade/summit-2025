@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/images/GROUPEDMITSUMM.png";
-import brochurePath from "../../assets/Summit2025Brochure.pdf";
+import brochurePath from "../../assets/FINALBROCHURE.pdf";
 
 const Navbar = () => {
   const handleDownload = () => {
@@ -78,17 +78,10 @@ const Navbar = () => {
                     */}
 
           <div>
-            <Link to="" className="nav-link register-button">
-              REGISTRATION OPEN SOON
+            <Link to="/register" className="nav-link register-button">
+              REGISTRATION NOW
             </Link>
           </div>
-          {/*}
-          <div>
-            <Link to="/" className="nav-link register-button">
-              Register is on HOLD
-            </Link>
-          </div>
-        */}
         </div>
       </div>
     </div>
