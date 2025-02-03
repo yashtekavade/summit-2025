@@ -82,13 +82,11 @@ const Navbar = () => {
               REGISTRATION OPEN SOON
             </Link>
           </div>
-          {/*}
           <div>
-            <Link to="/" className="nav-link register-button">
+            <Link to="/register" className="nav-link register-button">
               Register is on HOLD
             </Link>
           </div>
-        */}
         </div>
       </div>
     </div>
