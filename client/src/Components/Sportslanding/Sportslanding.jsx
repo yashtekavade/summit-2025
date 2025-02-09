@@ -37,11 +37,11 @@ const Sportslanding = () => {
             subtitle="Rs. 3,500/-"
             link="/register/Football(W)"
           />
-          {/* <SportsCard
+          <SportsCard
             title="Basketball Men"
             subtitle="Rs. 2,800/-"
             link="/register/Basketball(M)"
-          /> */}
+          />
           <SportsCard
             title="Basketball Women"
             subtitle="Rs. 2,000/-"
